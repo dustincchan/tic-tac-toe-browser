@@ -1,0 +1,90 @@
+html, body, figure, figcaption, ul, li h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+.ttt {
+  margin: 0 auto;
+  width: 900;
+  height: 500;
+}
+
+.ttt:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+ul {
+  margin: 30px auto;
+  width: 300px;
+  border: 5px solid black;
+}
+
+ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+li {
+  float: left;
+  width: 90px;
+  height: 90px;
+  border: 5px solid black;
+  background: gray;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+li:hover {
+  background: yellow;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+.x,
+.o {
+  text-align: center;
+  line-height: 90px;
+  background: white;
+  cursor: default;
+}
+
+.x:after,
+.o:after {
+  display: block;
+  text-align: center;
+  line-height: 90px;
+  width: 100%;
+  font-size: 60px;
+}
+
+.x:after {
+  content: "X";
+}
+
+.o:after {
+  content: "O";
+}
+
+.game-over {
+  color: red;
+  cursor: default;
+  background: green;
+}
